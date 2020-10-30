@@ -50,7 +50,7 @@ def get_given_gold_exchange_rate(date):
 
 
 if __name__ == '__main__':
-    print("Are you paid in dollars? (yes/no)")
+    print("Do you get a salary in dollars (yes/no)")
     answer = input()
     if answer in ['yes', 'y']:
         print("You have nothing to worry about :)")
@@ -80,9 +80,9 @@ if __name__ == '__main__':
     current_gold_worth = net_salary / current_gold_rate
     loss_gold = start_date_gold_worth - current_gold_worth
 
-    print(f"First salary USD worth {start_date_usd_worth}")
-    print(f"Last salary USD worth {current_usd_worth}")
-    print(f"Lost in USD {loss_usd}")
-    print(f"First salary gold (gr) worth {start_date_gold_worth}")
-    print(f"Last salary gold (gr) worth {current_gold_worth}")
-    print(f"Lost in gold(gr) {loss_gold}")
+    print(f"First salary USD worth is {start_date_usd_worth}")
+    print(f"Last salary USD worth is {current_usd_worth}")
+    print(f"Lost in USD is {loss_usd}")
+    print(f"First salary gold (gr) worth is {start_date_gold_worth}")
+    print(f"Last salary gold (gr) worth is {current_gold_worth}")
+    print(f"Lost in gold (gr) is {loss_gold}")
